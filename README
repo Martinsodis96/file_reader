@@ -1,11 +1,11 @@
-### Spring boot application ###
+###Spring boot application
 
-##This project requires a folder with files to parse. The folder path can be set in two ways-##
+##This project requires a folder with files to parse. The folder path can be set in two ways-
 
-#1. You set the path to the folder in the application.properties file#
+#1. You set the path to the folder in the application.properties file
 Run with folder path in application.properties:
 -> mvn spring-boot:run
 
-#2. You set the path to the folder in the program arguments.#
+#2. You set the path to the folder in the program arguments.
 Run with specific folder:
 mvn spring-boot:run -Dspring-boot.run.arguments=--scan.folder.path={folderPath}
