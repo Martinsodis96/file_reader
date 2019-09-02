@@ -1,0 +1,5 @@
+Run with folder path in application.properties:
+mvn spring-boot:run
+
+Run with specific folder:
+mvn spring-boot:run -Dspring-boot.run.arguments=--scan.folder.path={folderPath}
