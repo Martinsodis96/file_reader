@@ -123,7 +123,8 @@ public class FileService {
     }
 
     private void createOutputFile(Result result) {
-        Path path = Paths.get(folderPath + "/" + result.getFileName() + ".done.txt");
+        String rootPath = folderPath.isEmpty() ? "" : folderPath + "/";
+        Path path = Paths.get(rootPath + result.getFileName() + ".done.txt");
         try (BufferedWriter writer = Files.newBufferedWriter(path)) {
             writer.write("Number of Clients found in the file: " + result.getNumberOfClients());
             writer.newLine();
